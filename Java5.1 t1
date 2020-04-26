@@ -1,0 +1,18 @@
+import javax.swing.*;
+import java.util.Scanner;
+public class t1 {
+    public static void main(String[] args){
+        int num1;
+        int num2;
+        Scanner in=new Scanner(System.in);
+        Scanner inn=new Scanner(System.in);
+        num1=in.nextInt();
+        num2=inn.nextInt();
+        if (num1>num2)
+        System.out.println("您输入的两个数中最大的数是"+num1);
+        else
+            System.out.println("您输入的两个数最大的数是"+num2);
+
+
+    }
+}
