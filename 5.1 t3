@@ -1,0 +1,24 @@
+import javax.swing.*;
+import java.util.Scanner;
+public class t3 {
+    public static void main(String[] args){
+        int num1,num2,num3;
+        num1=(int)(1+Math.random()*100);
+        num2=(int)(1+Math.random()*100);
+        System.out.println("你猜第一个数字和第二个数字哪个大，请输入");
+        Scanner in=new Scanner(System.in);
+        num3=in.nextInt();
+        /*if (num3 == 1&&num1>num2)
+        System.out.println("A比B大");
+        else*/
+        if(num3==1) if (num1 > num2)
+            System.out.println("恭喜你猜对了");
+        else
+            System.out.println("很遗憾你猜错了");
+        if (num3 == 2 ) if (num1 < num2)
+            System.out.println("恭喜你猜对了");
+        else
+            System.out.println("很遗憾你猜错了");
+
+    }
+}
