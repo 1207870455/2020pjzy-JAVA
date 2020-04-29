@@ -1,0 +1,52 @@
+# 2020pjzy-JAVA
+import javax.swing.*;
+import java.util.Scanner;
+public class t71 {
+    public static void main(String[] args){
+        int shu;
+        System.out.println("请您输入数字");
+        Scanner in=new Scanner(System.in);
+        shu=in.nextInt();
+         //char t;
+        if(shu>=1) {
+            if (shu >= 10) {
+                if (shu >= 100) {
+                    if (shu >= 1000) {
+                        if (shu >= 10000) {
+                            System.out.println("您输入的数字为五位数");
+                        } else
+                            System.out.println("您输入的数字为四位数");
+                    }else
+                        System.out.println("您输入的数字为三位数");
+                } else
+                    System.out.println("您输入的数字为二位数");
+            } else
+                System.out.println("您输入的数字为一位数");
+        }
+        /*switch (t){
+            case 5:
+                System.out.println("您输入的数字为五位数");
+                break;
+            case 4:
+                System.out.println("您输入的数字为四位数");
+                break;
+            case 3:
+                System.out.println("您输入的数字是三位数");
+                break;
+            case 2:
+                System.out.println("您输入的数字是两位数");
+                break;
+            case 1:
+                System.out.println("您输入的数字位数是一位数");
+                break;
+            default:
+                System.out.println("请您输入数字");
+
+        }
+*/
+
+
+
+
+    }
+}
