@@ -1,0 +1,28 @@
+# 2020pjzy-JAVA
+import javax.swing.*;
+import java.util.Scanner;
+public class t523 {
+   public static void main(String[] args){
+       String zhanghao= new String();
+   String mima=new String();
+       System.out.println("请输入账号");
+   Scanner in=new Scanner(System.in);
+   System.out.println("请输入密码");
+   Scanner inn=new Scanner(System.in);
+   zhanghao=in.nextLine();
+   mima=inn.nextLine();
+       String admin = new String();
+       if (zhanghao.equals(admin)&&mima.equals(admin))
+
+       System.out.println("登录成功");
+       else
+           System.out.println("登录失败请检查账号密码");
+
+
+       //if(!zhanghao.equals(admin))
+         //  System.out.println("你输入的人我们不认识");
+
+   }
+
+    }
+
