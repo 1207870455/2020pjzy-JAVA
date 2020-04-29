@@ -1,0 +1,29 @@
+# 2020pjzy-JAVA
+import javax.swing.*;
+import java.util.Scanner;
+public class t7Flower {
+    public static void main(String[] args) {
+        int a;
+        System.out.println("请输入你要判定的数");
+        Scanner in = new Scanner(System.in);
+        a = in.nextInt();
+        //int c =((a/100)%10*((a/100)%10)*((a/100)%10))+(((a/10)%10)*(((a/10)%10))*((a/10)%10))+((a%10)*(a%10)*(a%10));
+        //int c =((a % 10) * a * a * a) + ((a / 10) % 10*a*a*a) + ((a / 100) % 10*a*a*a);
+        if (a == ((a / 100) % 10 * ((a / 100) % 10) * ((a / 100) % 10)) + (((a / 10) % 10) * (((a / 10) % 10)) * ((a / 10) % 10)) + ((a % 10) * (a % 10) * (a % 10)))
+            a = 1;
+            //System.out.println("您输入的数是水仙花数");
+        else
+            a = 2;
+        //System.out.println("您输入的数不是水仙花数");
+        switch (a) {
+            case 1:
+                System.out.println("您输入的数为水仙花数");
+                break;
+            case 2:
+                System.out.println("您输入的数不是水仙花数");
+                break;
+            default:
+                System.out.println("您输入的数啥也不是");
+        }
+    }
+}
