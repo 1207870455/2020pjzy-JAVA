@@ -1,0 +1,40 @@
+# 2020pjzy-JAVA
+import java.util.Scanner;
+
+public class t621 {
+    public static void main(String[] args){
+        int chengji;
+        System.out.println("请输入你的成绩");
+        Scanner fen = new Scanner(System.in);
+        chengji = fen.nextInt();
+        char a;
+        if (chengji >= 90 && chengji <= 100)
+            a = 'A';
+        else if (chengji >= 80 && chengji < 90)
+            a = 'B';
+        else if (chengji >= 70 && chengji < 80)
+            a = 'C';
+        else if (chengji >= 60 && chengji < 70)
+            a = 'D';
+        else
+            a = 'E';
+        switch (a){
+            case 'A':
+                System.out.println("您的成绩为优秀");
+                break;
+            case 'B':
+            case 'C':
+                System.out.println("您的成绩为良好");
+                break;
+            case 'D':
+                System.out.println("您的成绩为及格");
+                break;
+            default:
+                System.out.println("你回去重读吧");
+
+
+
+        }
+
+    }
+}
