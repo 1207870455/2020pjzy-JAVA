@@ -1,0 +1,22 @@
+# 2020pjzy-JAVA
+import javax.swing.*;
+import java.util.Scanner;
+public class t72 {
+    public static void main(String[] args){
+     System.out.println("**用户信息注册系统**");
+     System.out.println("输入用户名来完成注册");
+     String a;
+     Scanner z=new Scanner(System.in);
+     a=z.next();
+     int changdu= a.length();
+     if(changdu< 8)
+     System.out.println("用户名过短，请重新操作");
+        else {
+         System.out.println("注册成功您的用户名为");//(
+         System.out.println(a);
+         System.out.println("您的密码为");
+         System.out.println(a.substring(3, 5) + a.substring(7, 9));
+         System.out.println("您的密码为初始密码请尽快修改");
+     }
+    }
+}
